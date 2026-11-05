@@ -1,0 +1,96 @@
+/* FOOTBALL CENTRAL — MAIN STYLES */
+
+:root {
+    --electric-blue: #1677FF;
+    --deep-navy: #071426;
+    --white: #FFFFFF;
+    --ice-blue: #A9D8FF;
+    --slate: #192B42;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--deep-navy);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--slate);
+    padding: 25px 5%;
+    border-bottom: 3px solid var(--electric-blue);
+}
+
+header h1 {
+    color: var(--white);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: var(--ice-blue);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--electric-blue);
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+section {
+    background: var(--slate);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border-left: 4px solid var(--electric-blue);
+}
+
+section h2 {
+    color: var(--ice-blue);
+    margin-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--ice-blue);
+    border-top: 1px solid var(--slate);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
